@@ -38,39 +38,39 @@ Median Household Income(Importance: 0.016315): Median household income is a crit
 
 # STGCN
 
-Introduction
+## Introduction
 In the realm of predictive analytics for area visitor volume, capturing complex interdependencies between various factors like time and space is crucial. Our initial approach using traditional machine learning models, such as Random Forest, revealed limitations in modeling the relationships among the data dimensions adequately. To address this challenge, we pivoted to implementing the Spatio-Temporal Graph Convolutional Network (STGCN), a deep learning framework tailored for handling the intricacies of spatial and temporal data dependencies.
 
-Methodology
+## Methodology
 Data Encoding and Graph Construction
 We transformed our tabular dataset into a graph format, where nodes represent different regional parameters (e.g., locations with visitor counts, infection rates). These were interconnected through a weighted adjacency matrix, reflecting the spatial dependencies and the strength of the relationship between different nodes.
 
-Graph Convolutional Networks (GCN)
+## Graph Convolutional Networks (GCN)
 The spatial structure of the data was processed using Graph Convolutional Networks (GCN). This method allowed us to capture spatial dependencies effectively by applying convolution over the graph structure, encoded in our weighted adjacency matrix.
 
-Handling Temporal Dynamics with Gated CNNs
+## Handling Temporal Dynamics with Gated CNNs
 For the temporal data, such as historical visitor counts and COVID-19 infection trends, we utilized Gated Convolutional Neural Networks (Gated CNNs). This approach helped in capturing the temporal patterns by applying convolutions across the time axis of the data, ensuring that both recent and older information could affect the forecasts adequately.
 
-Model Training and Optimization
+## Model Training and Optimization
 The STGCN model underwent rigorous training, where we fine-tuned various network parameters such as kernel size and the number of layers to optimize performance. We utilized techniques like Cross-Validation and Random Search for hyperparameter tuning to enhance the model's ability to generalize over different data splits.
 
-Feature Importance and Model Evaluation
+## Feature Importance and Model Evaluation
 To understand the impact of different features on our predictions, we developed a custom algorithm based on the permutation feature importance method. This analysis helped identify which factors most significantly affected visitor volume predictions, providing insights into both static and dynamic feature influences across spatial and temporal dimensions.
 
 We assessed the model's performance using metrics such as Gini importance, Mean Squared Error (MSE), and R-Squared (R2). The STGCN model demonstrated superior capability in capturing complex patterns and dependencies, achieving robust prediction accuracy and outperforming traditional models.
 
-Conclusion
+## Conclusion
 The implementation of STGCN represented a significant advancement in our analytical capabilities, allowing for a more nuanced understanding and forecasting of area visitor volumes. This approach not only improved prediction accuracy but also provided deeper insights into how different variables interact over time and space.
 
 # Future Work
 
-Integration of Advanced Models
+## Integration of Advanced Models
 For future iterations of our analysis, we aim to incorporate more sophisticated models such as Attention Based Spatio-Temporal Graph Convolutional Networks (ASTGCN). These models are known for their enhanced ability to capture complex interactions over both spatial and temporal dimensions, potentially providing even more accurate predictions.
 
-Incorporation of Weather Data
+## Incorporation of Weather Data
 Another critical area of development will be the inclusion of weather conditions as a feature in our models. Weather significantly affects visitor behavior; thus, its integration is expected to improve the predictive performance of our models. By analyzing how different weather patterns impact visitor volumes, we can refine our predictions and offer more tailored insights.
 
-Addressing Endogeneity Issues
+## Addressing Endogeneity Issues
 A crucial aspect of our future work will involve tackling the endogeneity issues within our data. For example, a rise in infection rates might lead to decreased area visitation in subsequent periods, while a reduction in visitor volume could conversely lead to lower infection rates in the following periods. Addressing these feedback loops will require sophisticated modeling techniques that can capture these two-way interactions. This will not only make our model more robust but also increase the accuracy and reliability of our forecasts.
 
 These enhancements will ensure our model remains at the cutting edge of predictive analytics, providing valuable insights for urban planning and public health management.
