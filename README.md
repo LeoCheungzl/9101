@@ -78,4 +78,5 @@ A crucial aspect of our future work will involve tackling the endogeneity issues
 These enhancements will ensure our model remains at the cutting edge of predictive analytics, providing valuable insights for urban planning and public health management.
 
 meeting note:https://docs.google.com/document/d/1Loylm1sFE56kFqwFyC3Zn3-QBokQnbfh3ouY3gI5208/edit
+
 linear regression result: https://docs.google.com/document/d/1lCrqLD7eYGs0DGrqefKAu70XgB2ivlOWg-6M-hPl7pw/edit
