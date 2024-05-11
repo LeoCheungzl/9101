@@ -1,6 +1,8 @@
 # 9101
 # Random Forest
+
 Introduction
+
 In recent months, our project aimed to utilize various demographic and health-related variables to model and predict area visitor numbers in the New York region. This report details the methodologies applied in the regression analysis, focusing on the use of a Random Forest model, and discusses the results and implications of our findings.
 
 Data Collection and Preprocessing
