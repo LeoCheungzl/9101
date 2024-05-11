@@ -64,6 +64,25 @@ We assessed the model's performance using metrics such as Gini importance, Mean 
 Conclusion
 The implementation of STGCN represented a significant advancement in our analytical capabilities, allowing for a more nuanced understanding and forecasting of area visitor volumes. This approach not only improved prediction accuracy but also provided deeper insights into how different variables interact over time and space.
 
+
+## linear regression
+
+
+1. Model Significance:
+The `F` statistic is 682.34 with a p-value close to 0. This suggests that the regression model is statistically significant, and the predictors explain a substantial part of the variability in the visit counts.
+
+2. R-squared:
+The R-squared value is 0.1168, which means that approximately 11.7% of the variance in visit counts is explained by the model. This is a relatively low value, indicating a poor fit of the model to the data.
+
+3. Median Household Income (Coefficient: 0.0384863)
+This positive coefficient indicates that an increase in median household income is associated with an increase in the number of visits to POIs. Specifically, for every unit increase in median household income, there is a predicted increase of approximately 0.0385 in the visit count. The statistical significance of this variable is confirmed by a p-value of 0.000, implying a less than 0.1% probability that this relationship is due to chance. This relationship is robust across the 95% confidence interval provided, which does not cross zero, further validating the positive impact of household income on POI visitation.Practically, this could be due to higher-income households having more disposable income, which enables them to engage more in activities that require spending, such as dining out, shopping, and recreational activities. This information could be valuable for businesses and service providers as they plan where to locate new establishments or how to market their services. For policymakers, understanding the relationship between income levels and POI visitation can help in designing economic policies that stimulate local businesses and cater to the needs of different income groups.
+
+4. Total Population (Coefficient: 0.1017755)
+The coefficient for total population is even more substantial, suggesting that population size has a stronger effect on the number of POI visits than median household income. With a coefficient of 0.1018, this indicates that as the population increases, the number of visits to POIs also increases significantly. The t-statistic and its corresponding p-value affirm the statistical significance of this relationship, demonstrating that population is a key driver of visitation frequency. 
+
+5. Case Rate (Coefficient: -0.1532359)
+The negative coefficient for case rate suggests that an increase in the rate of COVID-19, is associated with a decrease in POI visitation. However, the p-value of 0.243 indicates that this relationship is not statistically significant at conventional levels (such as 0.05 or 0.01). The confidence interval for this coefficient includes zero, which further implies that we cannot state with high confidence that there is a true impact of case rate on visitation numbers.
+
 # Future Work
 
 ## Integration of Advanced Models
