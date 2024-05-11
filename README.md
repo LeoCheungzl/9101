@@ -76,3 +76,6 @@ Another critical area of development will be the inclusion of weather conditions
 A crucial aspect of our future work will involve tackling the endogeneity issues within our data. For example, a rise in infection rates might lead to decreased area visitation in subsequent periods, while a reduction in visitor volume could conversely lead to lower infection rates in the following periods. Addressing these feedback loops will require sophisticated modeling techniques that can capture these two-way interactions. This will not only make our model more robust but also increase the accuracy and reliability of our forecasts.
 
 These enhancements will ensure our model remains at the cutting edge of predictive analytics, providing valuable insights for urban planning and public health management.
+
+meeting note:https://docs.google.com/document/d/1Loylm1sFE56kFqwFyC3Zn3-QBokQnbfh3ouY3gI5208/edit
+linear regression result: https://docs.google.com/document/d/1lCrqLD7eYGs0DGrqefKAu70XgB2ivlOWg-6M-hPl7pw/edit
